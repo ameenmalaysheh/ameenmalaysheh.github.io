@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#05070b">
+<meta name="description" content="Ameen Khalid Ameen Malaysheh — Independent Interdisciplinary Researcher & Author. Human cognition, psychology, economic theory, ancient civilizations, pyramid construction theory, and interdisciplinary research.">
+<title>Ameen Malaysheh | Independent Interdisciplinary Researcher & Author</title>
+<style>
+:root {
+  --bg:#030509; --bg2:#07101d; --panel:#091523; --panel2:#0d1c2c;
+  --blue:#18a9ff; --blue2:#006fff; --cyan:#55d9ff; --text:#eef7ff;
+  --muted:#8ea5ba; --line:rgba(89,170,226,.20); --shadow:0 24px 70px rgba(0,0,0,.42);
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+radial-gradient(900px 500px at 80% -5%,rgba(0,112,255,.18),transparent 65%),
+radial-gradient(700px 500px at 5% 18%,rgba(24,169,255,.08),transparent 65%),
+linear-gradient(180deg,var(--bg),#050a12 55%,#020407);
+color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nav{position:sticky;top:0;z-index:50;background:rgba(3,5,9,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}
+.mark{width:40px;height:40px;border:1px solid rgba(24,169,255,.65);border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#0b2941,#06101c);box-shadow:0 0 28px rgba(24,169,255,.14);font-size:13px}
+.brand small{display:block;color:#7f99af;font-size:10px;font-weight:600;letter-spacing:.15em;margin-top:1px}
+.navlinks{display:flex;gap:20px;align-items:center;font-size:13px;color:#b8c9d8}
+.navlinks a:hover{color:white}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:12px;border:1px solid rgba(72,180,255,.32);background:linear-gradient(135deg,rgba(18,133,220,.25),rgba(0,78,180,.12));color:white;font-weight:750;font-size:13px;transition:.2s}
+.btn:hover{transform:translateY(-2px);border-color:rgba(85,217,255,.65);box-shadow:0 12px 30px rgba(0,119,255,.15)}
+.btn.primary{background:linear-gradient(135deg,#0797f3,#0757d8);border-color:#25b6ff;box-shadow:0 12px 36px rgba(0,104,255,.23)}
+.hero{min-height:calc(100vh - 76px);display:grid;align-items:center;padding:80px 0 90px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:auto -15% 2% 38%;height:360px;background:radial-gradient(ellipse,rgba(0,124,255,.17),transparent 66%);filter:blur(18px);pointer-events:none}
+.gridhero{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#6ed7ff;font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:#24b8ff;box-shadow:0 0 15px #24b8ff}
+h1{font-size:clamp(42px,6vw,78px);line-height:.98;letter-spacing:-.045em;margin:20px 0 22px;max-width:900px}
+.gradient{background:linear-gradient(105deg,#fff 10%,#bcecff 55%,#25a9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h2{font-size:clamp(19px,2.3vw,27px);line-height:1.3;color:#c5d9e9;font-weight:500;margin:0 0 25px;max-width:780px}
+.hero p{color:var(--muted);font-size:17px;max-width:700px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.signal{border:1px solid var(--line);border-radius:26px;background:linear-gradient(180deg,rgba(11,28,45,.78),rgba(4,10,17,.82));box-shadow:var(--shadow);padding:28px;position:relative;overflow:hidden}
+.signal:after{content:"";position:absolute;width:230px;height:230px;right:-90px;top:-100px;border-radius:50%;background:rgba(0,132,255,.13);filter:blur(8px)}
+.signal-title{color:#75d9ff;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.signal h3{font-size:26px;line-height:1.2;margin:12px 0 20px}
+.signal p{font-size:14px;color:#91aabd}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font-size:11px;padding:7px 10px;border:1px solid rgba(80,173,230,.2);border-radius:999px;color:#b7ccdc;background:rgba(255,255,255,.025)}
+section{padding:100px 0;border-top:1px solid rgba(89,170,226,.08)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}
+.kicker{color:#52caff;font-weight:800;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+h2{font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.03em;margin:8px 0 0}
+.section-head p{color:var(--muted);max-width:580px;margin:0}
+.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.panel{border:1px solid var(--line);background:linear-gradient(145deg,rgba(12,27,43,.78),rgba(4,10,16,.72));border-radius:20px;padding:28px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.panel h3{margin:0 0 12px;font-size:20px}
+.panel p{margin:0;color:#9eb3c4}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.stat{padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.018)}
+.stat b{display:block;font-size:25px;color:#fff}
+.stat span{font-size:11px;color:#7891a5}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{position:relative;min-height:250px;padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,rgba(10,27,44,.9),rgba(3,8,14,.92));transition:.22s;overflow:hidden}
+.card:hover{transform:translateY(-5px);border-color:rgba(51,182,255,.5);box-shadow:0 20px 50px rgba(0,95,200,.13)}
+.card:before{content:"";position:absolute;inset:0 0 auto;height:2px;background:linear-gradient(90deg,transparent,#18a9ff,transparent);opacity:.7}
+.tag{color:#58cfff;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}
+.card h3{font-size:20px;line-height:1.2;margin:14px 0 10px}
+.card p{color:#8fa7b9;font-size:14px;margin:0}
+.works{display:grid;gap:12px}
+.work{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:20px 22px;border:1px solid var(--line);border-radius:16px;background:rgba(8,19,30,.65)}
+.work:hover{border-color:rgba(55,181,255,.45)}
+.work h3{font-size:16px;margin:0 0 5px}
+.work p{font-size:12px;color:#7f98ac;margin:0}
+.year{color:#6bcfff;font-size:12px;font-weight:800}
+.books{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.book{padding:26px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(155deg,#0a1c2e,#040a10);min-height:280px;display:flex;flex-direction:column;justify-content:space-between}
+.bookcover{height:135px;border-radius:10px;border:1px solid rgba(97,190,240,.2);background:linear-gradient(145deg,#0e3150,#06111e);display:grid;place-items:center;text-align:center;padding:18px;box-shadow:inset 0 0 45px rgba(0,126,255,.10)}
+.bookcover strong{font-size:16px;line-height:1.25}
+.book h3{font-size:17px;line-height:1.3;margin:18px 0 4px}
+.book p{color:#8198aa;font-size:12px;margin:0}
+.archive{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+.linklist{display:grid;gap:9px}
+.linkitem{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.018);color:#c7d9e6;font-size:13px}
+.linkitem:hover{border-color:rgba(24,169,255,.5);color:#fff}
+.video{border:1px solid var(--line);border-radius:20px;padding:24px;background:linear-gradient(145deg,rgba(10,28,44,.75),rgba(4,9,15,.82))}
+.video h3{margin:8px 0 8px}
+.video p{color:#91aabd;font-size:13px}
+footer{padding:55px 0 70px;border-top:1px solid var(--line);background:#020407}
+.footergrid{display:flex;justify-content:space-between;gap:25px;align-items:end}
+.socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}
+.socials a{padding:8px 11px;border:1px solid var(--line);border-radius:10px;font-size:11px;color:#9eb5c7}
+.muted{color:#6e879b;font-size:12px}
+.mobile{display:none}
+@media(max-width:900px){
+.navlinks{display:none} .mobile{display:block}
+.gridhero,.aboutgrid,.archive{grid-template-columns:1fr}
+.cards,.books{grid-template-columns:1fr 1fr}
+.stats{grid-template-columns:1fr 1fr}
+.hero{padding-top:55px}
+}
+@media(max-width:620px){
+.container{width:min(var(--max),calc(100% - 26px))}
+.cards,.books{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr 1fr}
+.work{grid-template-columns:1fr}
+h1{font-size:44px}
+section{padding:75px 0}
+.footergrid{display:block}
+}
+
+.media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.media-card{display:block;padding:20px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(150deg,rgba(10,27,44,.8),rgba(3,8,14,.9));transition:.2s}
+.media-card:hover{transform:translateY(-4px);border-color:rgba(60,185,255,.5);box-shadow:0 18px 40px rgba(0,95,200,.13)}
+.media-card h3{font-size:16px;line-height:1.3;margin:10px 0 8px}.media-card p{font-size:12px;color:#8ea6b8;margin:0 0 15px}.media-card span{font-size:11px;color:#62ceff;font-weight:800}
+.book-detail{min-height:390px}.edition{display:flex;justify-content:space-between;gap:15px;padding:7px 0;border-bottom:1px solid rgba(89,170,226,.08);font-size:11px}.edition b{color:#bcd1df}.edition span{color:#7f98aa;text-align:right}.asin{font-size:10px;color:#5f788c;margin-top:10px;line-height:1.5}
+@media(max-width:1000px){.media-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.media-grid{grid-template-columns:1fr}}
+
+
+.site-code{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin:18px 0 8px;
+  padding:8px 12px;
+  border:1px solid rgba(24,169,255,.22);
+  border-radius:999px;
+  background:rgba(7,16,29,.72);
+  color:#8ea5ba;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.site-code strong{
+  color:#55d9ff;
+  letter-spacing:.14em;
+  font-weight:700;
+}
+
+</style>
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Ameen Khalid Ameen Malaysheh",
+  "alternateName":["Ameen Malaysheh","Ameen Khalid Malaysheh"],
+  "jobTitle":"Independent Interdisciplinary Researcher & Author",
+  "url":"https://github.com/ameenmalaysheh/Ameen-Malaysheh",
+  "email":"mailto:ameenmalaysheh@mlri.net",
+  "sameAs":[
+    "https://orcid.org/0009-0008-6466-1883",
+    "https://osf.io/4gp7x/",
+    "https://doi.org/10.5281/zenodo.17742510",
+    "https://hal.science/ameen-malaysheh",
+    "https://scholar.google.com/citations?user=8p6owGMAAAAJ&hl=en",
+    "https://github.com/ameenmalaysheh",
+    "https://www.amazon.com/author/ameenmalaysheh",
+    "https://www.youtube.com/@ameenmalaysheh",
+    "https://medium.com/@ameenmalaysheh",
+    "https://www.linkedin.com/in/ameen-malaysheh/",
+    "https://www.wikidata.org/wiki/Q137175002"
+  ],
+  "affiliation":{"@type":"Organization","name":"Metaphysical Light Research Institute (MLRI)","url":"https://mlri.net/"}
+}
+</script>
+<style>
+.contact-card{margin:24px 0;padding:24px;border:1px solid rgba(24,169,255,.18);border-radius:18px;background:linear-gradient(145deg,rgba(9,21,35,.96),rgba(3,5,9,.96))}
+.contact-card h3{margin:6px 0 14px}.contact-card p{margin:7px 0}.contact-card a{color:#55d9ff}
+.site-code{display:inline-flex;align-items:center;gap:10px;margin:18px 0 8px;padding:8px 12px;border:1px solid rgba(24,169,255,.22);border-radius:999px;background:rgba(7,16,29,.72);color:#8ea5ba;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.site-code strong{color:#55d9ff;letter-spacing:.14em}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container navin">
+    <a class="brand" href="#top">
+      
+      <span>Ameen Malaysheh<small>RESEARCHER · AUTHOR</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#models">Models</a>
+      <a href="#works">Works</a><a href="#medium">Medium</a><a href="#books">Books</a><a href="#archive">Archive</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn mobile" href="#contact">Links</a>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container gridhero">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Independent interdisciplinary research</div>
+      <h1><span class="gradient">Ameen Khalid Ameen Malaysheh</span></h1>
+      <h2>Independent Interdisciplinary Researcher &amp; Author</h2>
+      <p>Human Cognition · Psychology · Economic Theory · Ancient Civilizations · Pyramid Construction Theory</p>
+      <p>Research spanning the structure of the human self, the nature of the mind, cognition, consciousness, psychology, economic systems, ancient civilizations, historical engineering, philosophy, and interdisciplinary methodology.</p>
+      <div class="actions">
+        <a class="btn primary" href="#research">Explore the Research</a>
+        <a class="btn" href="https://github.com/ameenmalaysheh/Ameen-Malaysheh" target="_blank" rel="noopener">Open Research Repository</a>
+      </div>
+    </div>
+    <aside class="signal">
+      <div class="signal-title">Research architecture</div>
+      <h3>From the human self to systems, civilizations, and knowledge.</h3>
+      <p>The work is organized as a connected body of independent interdisciplinary research, with publications and working drafts preserved through open-access repositories.</p>
+      <div class="pillrow">
+        <span class="pill">Human Self</span><span class="pill">Mind &amp; Cognition</span>
+        <span class="pill">Psychology</span><span class="pill">Economics</span>
+        <span class="pill">Ancient Engineering</span><span class="pill">Philosophy</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="about">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">01 · About</div><h2>A researcher working across boundaries.</h2></div>
+    <p>The profile brings together independent research, authorship, business and project experience, and long-term interdisciplinary study.</p>
+  </div>
+  <div class="aboutgrid">
+    <div class="panel">
+      <h3>Researcher &amp; Author</h3>
+      <p>Ameen Malaysheh presents his work as independent interdisciplinary research spanning anthropology, political science, religious and political philosophy, philosophy of mind, human self-structure, economics, social systems, ancient civilizations, historical engineering, metaphysical studies, theoretical models, and conceptual frameworks.</p>
+    </div>
+    <div class="panel">
+      <h3>Practical foundation</h3>
+      <p>The research profile also draws on experience in construction and real estate development, project evaluation, building-system analysis, material and property valuation, market analysis, business development, international trade, and commercial consulting.</p>
+    </div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>23+</b><span>works visible in Google Scholar's supplied record</span></div>
+    <div class="stat"><b>2005–present</b><span>self-directed interdisciplinary study</span></div>
+    <div class="stat"><b>Open</b><span>research preservation approach</span></div>
+    <div class="stat"><b>AR · EN</b><span>bilingual research archive</span></div>
+  </div>
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">02 · Research</div><h2>The Path to Truth.</h2></div>
+    <p>The parent project, “The Sound Cognitive Approach to the Emergence of the Sound Human Being,” provides the broad intellectual framework connecting the research areas.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><div class="tag">Human Cognition</div><h3>Human Self-Structure &amp; Mind</h3><p>The Malaysheh Model of Human Self-Structure and the Nature of the Mind, presented as an open theoretical framework for further examination, criticism, empirical testing, and development.</p></article><article class="card"><div class="tag">Ancient Engineering</div><h3>Pyramid Construction Theory</h3><p>An interdisciplinary engineering–scientific line of research proposing an alternative framework involving empty clay molds in the construction of Egyptian pyramids.</p></article><article class="card"><div class="tag">Economic Theory</div><h3>The Nations’ Barter Bank</h3><p>A strategic framework for a modern global exchange system, developed as an alternative economic-system model within the broader research program.</p></article><article class="card"><div class="tag">Foundational Project</div><h3>The Sound Cognitive Approach</h3><p>The parent project connecting inquiry into the human being, cognition, psychology, consciousness, social systems, economics, history, and interdisciplinary methodology.</p></article><article class="card"><div class="tag">Reflective Studies</div><h3>Ameen’s Reflections</h3><p>A personal research effort in Qur’anic reflection, linguistic analysis, universal laws, and contemporary human knowledge, explicitly presented as an independent scholarly interpretation open to discussion and revision.</p></article><article class="card"><div class="tag">Literature &amp; Philosophy</div><h3>Hallucinations of a Brave Man</h3><p>A symbolic literary project combining fictional narrative with philosophical, psychological, social, spiritual, and civilizational reflection.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="models">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">03 · Theoretical Models</div><h2>Frameworks under development.</h2></div>
+    <p>These models are presented as theoretical and conceptual work intended for examination, discussion, criticism, and further development.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><div class="tag">01</div><h3>Malaysheh Model of Human Self-Structure</h3><p>A framework concerning the human self, the nature of the mind, cognition, body, mind, and spirit.</p></article>
+    <article class="card"><div class="tag">02</div><h3>Integrated Psychological–Cognitive–Physical Balance</h3><p>An interdisciplinary framework connecting psychological, cognitive, and physical dimensions.</p></article>
+    <article class="card"><div class="tag">03</div><h3>The Nations’ Barter Bank Framework</h3><p>A proposed strategic framework for a modern global exchange system.</p></article>
+    <article class="card"><div class="tag">04</div><h3>Clay-Mold Theory of Pyramid Construction</h3><p>An alternative engineering–scientific framework for understanding pyramid construction methods.</p></article>
+    <article class="card"><div class="tag">05</div><h3>Consciousness &amp; Cognition Models</h3><p>Research exploring perception, cognition, consciousness, psychological structure, and human behavior.</p></article>
+    <article class="card"><div class="tag">06</div><h3>Social Systems &amp; Interdisciplinary Frameworks</h3><p>Additional models examining social systems, institutions, behavior, and the interaction of knowledge domains.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="works">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">04 · Selected Works</div><h2>Research, papers, narratives.</h2></div>
+    <p>Selected records are linked directly to their public archival pages.</p>
+  </div>
+  <div class="works">
+    <a class="work" href="https://zenodo.org/records/22210374" target="_blank" rel="noopener"><div><h3>The Legitimacy of Scientific Experiments on Human Beings</h3><p>Human research ethics • Malaysheh Model</p></div><span class="year">2026 ↗</span></a><a class="work" href="https://zenodo.org/records/22058299" target="_blank" rel="noopener"><div><h3>Hallucinations of a Brave Man — Latest Updated Draft</h3><p>Symbolic literary work • perception • consciousness</p></div><span class="year">2026 ↗</span></a><a class="work" href="https://zenodo.org/records/21419042" target="_blank" rel="noopener"><div><h3>Ameen’s Reflections: Exploring Selected Hidden Insights of the Qur’an</h3><p>Reflective research • methodology</p></div><span class="year">2026 ↗</span></a><a class="work" href="https://zenodo.org/records/21472722" target="_blank" rel="noopener"><div><h3>The Ascent to the Bottom of Hell</h3><p>Gnostic philosophical narrative</p></div><span class="year">2026 ↗</span></a><a class="work" href="https://doi.org/10.5281/ZENODO.21413642" target="_blank" rel="noopener"><div><h3>The Path to Truth — Foundational Charter</h3><p>Foundational interdisciplinary project</p></div><span class="year">2026 ↗</span></a><a class="work" href="https://doi.org/10.5281/ZENODO.19496620" target="_blank" rel="noopener"><div><h3>Malaysheh Model of Human Self-Structure and the Nature of the Mind</h3><p>Human cognition • mind • self</p></div><span class="year">2025 ↗</span></a><a class="work" href="https://doi.org/10.5281/ZENODO.17926316" target="_blank" rel="noopener"><div><h3>Malaysheh Pyramid Clay-Mold Theory</h3><p>Ancient engineering • pyramid construction</p></div><span class="year">2025 ↗</span></a><a class="work" href="https://doi.org/10.5281/ZENODO.17856891" target="_blank" rel="noopener"><div><h3>The Nations’ Barter Bank</h3><p>Economic theory • global exchange</p></div><span class="year">2025 ↗</span></a>
+  </div>
+</div>
+</section>
+
+
+<section id="medium">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">05 · Medium</div><h2>Current writing &amp; public essays.</h2></div>
+    <p>Recent writing includes interdisciplinary research commentary, philosophy, social analysis, literary work, and reflections on cognition and human systems.</p>
+  </div>
+  <div class="media-grid"><a class="media-card" href="https://medium.com/@ameenmalaysheh/بدك-العنب-ولا-تقاتل-الناطور-الباحث-متعدد-التخصصات-بين-التخصص-وترابط-المعرفة-3385644aa009" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026-09-15</div>
+      <h3>بدك العنب ولا تقاتل الناطور</h3><p>الباحث متعدد التخصصات: بين التخصص وترابط المعرفة</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/some-factors-behind-the-success-and-failure-of-marriage-23e3d0d9265f" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>بعض أسباب نجاح الزواج وفشله في المجتمعات الشرقية</h3><p>Some Factors Behind the Success and Failure of Marriage in Eastern Societies</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/the-magic-lamp-and-the-parties-fighting-to-possess-what-cannot-be-possessed-adba7820c024" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>The Magic Lamp and the Parties Fighting to Possess What Cannot Be Possessed</h3><p>The Supernaturally Gifted Human and the War of Political Parties Against Him</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/ameen-malaysheh-51e017642eaf" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>A Testimony for History and Integrity</h3><p>Why Ameen Malaysheh’s Interdisciplinary Research Encounters Challenges and Obstacles Within Single-Disciplinary Perspectives</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/the-garment-and-the-patches-the-struggle-of-political-parties-in-the-time-of-jesus-son-of-mary-069d61b9af0a" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>The Garment and the Patches</h3><p>The Struggle of Political Parties in the Time of Jesus, Son of Mary, at the End of Times</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/the-malaysheh-perspective-on-the-theory-of-the-political-organization-cycle-from-problem-solving-to-e397c85bd53b" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>The Malaysheh Perspective on the Theory of the Political Organization Cycle</h3><p>From Problem-Solving to the Persistence of Conflict</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/the-invisible-wealth-of-a-human-mind-51d7d2fd42e2" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>The Invisible Wealth of a Human Mind</h3><p>Cognitive Capital, Stolen Value, and the Unmeasured Cost of Becoming Capable of Seeing</p><span>Read article ↗</span>
+    </a><a class="media-card" href="https://medium.com/@ameenmalaysheh/the-legitimacy-of-scientific-experiments-on-human-beings-2d073a8d8491" target="_blank" rel="noopener">
+      <div class="tag">MEDIUM · 2026</div>
+      <h3>The Legitimacy of Scientific Experiments on Human Beings</h3><p>The Human Being as a Subject of Experimentation in Light of the Malaysheh Model</p><span>Read article ↗</span>
+    </a></div>
+</div>
+</section>
+
+
+<section id="books">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">06 · Books</div><h2>Published and developing editions.</h2></div>
+    <p>The supplied KDP bookshelf shows live, blocked, and draft formats across English and Arabic titles, with edition-specific ASINs and pricing.</p>
+  </div>
+  <div class="books"><article class="book book-detail">
+      <div>
+        <div class="bookcover"><strong>The Secret of the Human Self-Structure and the Nature of the Mind</strong></div>
+        <h3>The Secret of the Human Self-Structure and the Nature of the Mind</h3><p>How to Overcome Most Psychological Difficulties: The Solution Is You</p>
+        <div class="edition"><b>Kindle</b><span>Kindle eBook · Live · $2.99</span></div>
+        <div class="edition"><b>Paperback</b><span>Paperback · Live · $14.99</span></div>
+        <div class="edition"><b>Hardcover</b><span>Hardcover · Live · $24.99</span></div>
+        <div class="asin">ASIN: B0G75QSNWW · B0G7FTS9LQ · B0G7FXH7RR</div>
+      </div>
+      <a class="btn" href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author Page ↗</a>
+    </article><article class="book book-detail">
+      <div>
+        <div class="bookcover"><strong>بنك الأمم للمقايضة: رؤية عالمية شاملة لاجتثاث الفقر تحت مظلة النظام الاقتصادي الدولي</strong></div>
+        <h3>بنك الأمم للمقايضة: رؤية عالمية شاملة لاجتثاث الفقر تحت مظلة النظام الاقتصادي الدولي</h3><p>Arabic edition</p>
+        <div class="edition"><b>Kindle</b><span>Kindle eBook · Live · $79.99</span></div>
+        <div class="edition"><b>Paperback</b><span>Paperback · Not supported by KDP in Arabic</span></div>
+        <div class="edition"><b>Hardcover</b><span>Hardcover · Not supported by KDP in Arabic</span></div>
+        <div class="asin">ASIN: B0G6XC2P8D</div>
+      </div>
+      <a class="btn" href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author Page ↗</a>
+    </article><article class="book book-detail">
+      <div>
+        <div class="bookcover"><strong>سرّ النفس البشرية وماهية العقل: كيف تقهر معظم المشاكل النفسية والعقلية</strong></div>
+        <h3>سرّ النفس البشرية وماهية العقل: كيف تقهر معظم المشاكل النفسية والعقلية</h3><p>Arabic edition</p>
+        <div class="edition"><b>Kindle</b><span>Kindle eBook · Live · $0.99</span></div>
+        <div class="edition"><b>Paperback</b><span>Paperback · Not supported by KDP in Arabic</span></div>
+        <div class="edition"><b>Hardcover</b><span>Hardcover · Not supported by KDP in Arabic</span></div>
+        <div class="asin">ASIN: B0G6X7CFFV</div>
+      </div>
+      <a class="btn" href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author Page ↗</a>
+    </article><article class="book book-detail">
+      <div>
+        <div class="bookcover"><strong>نظرية ملايشه للقوالب الطينية في سر بناء الأهرامات</strong></div>
+        <h3>نظرية ملايشه للقوالب الطينية في سر بناء الأهرامات</h3><p>A Scientific Inquiry into the Secret of Pyramid Construction</p>
+        <div class="edition"><b>Kindle</b><span>Kindle eBook · Live · $7.99</span></div>
+        <div class="edition"><b>Paperback</b><span>Paperback · Blocked · $19.99</span></div>
+        <div class="edition"><b>Hardcover</b><span>Hardcover · Blocked · $29.99</span></div>
+        <div class="asin">ASIN: B0G6WLTZ1V</div>
+      </div>
+      <a class="btn" href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author Page ↗</a>
+    </article><article class="book book-detail">
+      <div>
+        <div class="bookcover"><strong>Malaysheh Theory of Clay Molds in the Construction of the Pyramids</strong></div>
+        <h3>Malaysheh Theory of Clay Molds in the Construction of the Pyramids</h3><p>An Interdisciplinary Engineering–Scientific Study</p>
+        <div class="edition"><b>Kindle</b><span>Kindle eBook · Live · $9.99</span></div>
+        <div class="edition"><b>Paperback</b><span>Paperback · Live · $19.99</span></div>
+        <div class="edition"><b>Hardcover</b><span>Hardcover · Draft</span></div>
+        <div class="asin">ASIN: B0G6WMYSGK · B0G6WMXGYX</div>
+      </div>
+      <a class="btn" href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author Page ↗</a>
+    </article><article class="book book-detail">
+      <div>
+        <div class="bookcover"><strong>THE NATIONS’ BARTER BANK</strong></div>
+        <h3>THE NATIONS’ BARTER BANK</h3><p>A Strategic Framework for a Modern Global Exchange System</p>
+        <div class="edition"><b>Kindle</b><span>Kindle eBook · Live · $99.99 · KDP Select</span></div>
+        <div class="edition"><b>Paperback</b><span>Paperback · Live · $149.99</span></div>
+        <div class="edition"><b>Hardcover</b><span>Hardcover · Draft</span></div>
+        <div class="asin">ASIN: B0G6G4F5D9 · B0G6GFMVQ8</div>
+      </div>
+      <a class="btn" href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author Page ↗</a>
+    </article></div>
+</div>
+</section>
+
+
+<section id="archive">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">07 · Archive &amp; Media</div><h2>A living research record.</h2></div>
+    <p>Research drafts, publications, diagrams, Arabic and English materials, and video documentation are preserved across multiple platforms.</p>
+  </div>
+  <div class="archive">
+    <div class="panel">
+      <h3>Research Archive</h3>
+      <div class="linklist">
+        <a class="linkitem" href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Malaysheh%2C%20Ameen%22" target="_blank" rel="noopener">Zenodo Research Archive <span>↗</span></a>
+        <a class="linkitem" href="https://github.com/ameenmalaysheh/Ameen-Malaysheh" target="_blank" rel="noopener">GitHub — Ameen-Malaysheh <span>↗</span></a>
+        <a class="linkitem" href="https://orcid.org/0009-0008-6466-1883" target="_blank" rel="noopener">ORCID Research Profile <span>↗</span></a>
+        <a class="linkitem" href="https://osf.io/4gp7x/" target="_blank" rel="noopener">OSF Project Space <span>↗</span></a>
+        <a class="linkitem" href="https://hal.science/user/index/" target="_blank" rel="noopener">HAL Profile <span>↗</span></a>
+        <a class="linkitem" href="https://scholar.google.com/citations?user=8p6owGMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar <span>↗</span></a>
+      </div>
+    </div>
+    <div class="video">
+      <div class="kicker">YouTube</div>
+      <h3>Metaphysical Light Institute Channel</h3>
+      <p>Research archive videos, documentary recordings, educational programs, and reflections connected to the wider research project.</p>
+      <a class="btn primary" href="https://www.youtube.com/@ameenmalaysheh" target="_blank" rel="noopener">Visit Channel ↗</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="section-head">
+    <div><div class="kicker">08 · Official Links</div><h2>Follow the research.</h2></div>
+    <p>The personal research profile remains distinct from the institutional identity of MLRI.</p>
+  </div>
+  <div class="cards">
+    <a class="card" href="https://github.com/ameenmalaysheh" target="_blank" rel="noopener"><div class="tag">Code &amp; Archive</div><h3>GitHub</h3><p>Repository, documents, diagrams, and project materials.</p></a>
+    <a class="card" href="https://orcid.org/0009-0008-6466-1883" target="_blank" rel="noopener"><div class="tag">Research Identity</div><h3>ORCID</h3><p>Persistent researcher identity and publication record.</p></a>
+    <a class="card" href="https://mlri.net/" target="_blank" rel="noopener"><div class="tag">Institution</div><h3>MLRI</h3><p>Metaphysical Light Research Institute — Knowledge · Humanity · Civilization.</p></a>
+  </div>
+  <div class="socials">
+    <a href="https://osf.io/4gp7x/" target="_blank" rel="noopener">OSF</a>
+    <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Malaysheh%2C%20Ameen%22" target="_blank" rel="noopener">Zenodo</a>
+    <a href="https://www.youtube.com/@ameenmalaysheh" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.amazon.com/author/ameenmalaysheh" target="_blank" rel="noopener">Amazon Author</a>
+    <a href="https://medium.com/@ameenmalaysheh" target="_blank" rel="noopener">Medium</a>
+    <a href="https://scholar.google.com/citations?user=8p6owGMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/ameen-malaysheh/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.wikidata.org/wiki/Q137175002" target="_blank" rel="noopener">Wikidata</a>
+  </div>
+</div>
+</section>
+</main>
+
+
+<section class="contact-card">
+  <div class="eyebrow">DIRECT CONTACT</div>
+  <h3>Research & Institutional Contact</h3>
+  <p><a href="mailto:ameenmalaysheh@mlri.net">ameenmalaysheh@mlri.net</a></p>
+  <p><a href="mailto:info@mlri.net">info@mlri.net</a></p>
+  <p>Jordan: <a href="tel:+962795110469">+962 795 110 469</a></p>
+  <p>United States: <a href="tel:+18484806010">+1 848 480 6010</a></p>
+</section>
+
+<div class="site-code" aria-label="Site code"><span>Site Code</span><strong>AKMOGCJM1</strong></div>
+<footer>
+<div class="container footergrid">
+  <div>
+    <div class="brand"><span>Ameen Khalid Ameen Malaysheh<small>INDEPENDENT INTERDISCIPLINARY RESEARCHER &amp; AUTHOR</small></span></div>
+    <div class="muted" style="margin-top:16px">Research • Models • Publications • Books • Archive</div>
+  </div>
+  <div class="muted">© 2026 Ameen Malaysheh · Research archive</div>
+</div>
+</footer>
+</body>
+</html>

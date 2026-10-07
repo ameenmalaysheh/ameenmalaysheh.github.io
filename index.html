@@ -182,6 +182,141 @@ footer{background:#02080e}
 }
 
 .navlinks a.current{color:#fff}.navlinks a.current:after{content:'';display:block;height:2px;background:#d6a84f;margin-top:4px;border-radius:2px}
+  /* MLRI — Official International Legal Notice */
+.mlri-legal-banner{
+  width:min(var(--max),calc(100% - 44px));
+  margin:0 auto;
+  padding:18px 0;
+}
+
+.mlri-legal-banner__link{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  width:100%;
+  box-sizing:border-box;
+  padding:20px 24px;
+
+  color:var(--text);
+  text-decoration:none;
+
+  background:linear-gradient(
+    135deg,
+    #0a2035 0%,
+    #071827 100%
+  );
+
+  border:1px solid rgba(214,168,79,.42);
+  border-radius:16px;
+
+  box-shadow:0 12px 35px rgba(0,0,0,.22);
+
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.mlri-legal-banner__link:hover{
+  transform:translateY(-2px);
+  border-color:var(--gold);
+  box-shadow:0 18px 45px rgba(0,0,0,.30);
+}
+
+.mlri-legal-banner__icon{
+  flex:0 0 auto;
+  color:var(--gold2);
+  font-size:29px;
+  line-height:1;
+}
+
+.mlri-legal-banner__content{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  min-width:0;
+}
+
+.mlri-legal-banner__content strong{
+  color:var(--gold2);
+  font-size:16px;
+  letter-spacing:.10em;
+  font-weight:800;
+}
+
+.mlri-legal-banner__subtitle{
+  color:#dbe5ec;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.mlri-legal-banner__meta{
+  color:#8fa7ba;
+  font-size:11px;
+  line-height:1.5;
+}
+
+.mlri-legal-banner__button{
+  margin-left:auto;
+  flex:0 0 auto;
+  padding:10px 15px;
+
+  border:1px solid var(--gold);
+  border-radius:999px;
+
+  color:var(--gold2);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.04em;
+  white-space:nowrap;
+}
+
+.mlri-legal-banner__link:hover .mlri-legal-banner__button{
+  background:var(--gold);
+  color:#061321;
+}
+
+[dir="rtl"] .mlri-legal-banner__button{
+  margin-left:0;
+  margin-right:auto;
+}
+
+[dir="rtl"] .mlri-legal-banner__content{
+  text-align:right;
+}
+
+@media(max-width:650px){
+  .mlri-legal-banner{
+    width:min(var(--max),calc(100% - 26px));
+    padding:12px 0;
+  }
+
+  .mlri-legal-banner__link{
+    padding:16px;
+    gap:12px;
+  }
+
+  .mlri-legal-banner__icon{
+    font-size:24px;
+  }
+
+  .mlri-legal-banner__content strong{
+    font-size:13px;
+    letter-spacing:.05em;
+  }
+
+  .mlri-legal-banner__subtitle{
+    font-size:11px;
+  }
+
+  .mlri-legal-banner__meta{
+    font-size:9px;
+  }
+
+  .mlri-legal-banner__button{
+    display:none;
+  }
+}
 </style>
  <!-- AMEEN MALAYSHEH — SIGNATURE IDENTITY SCHEMA -->
 <meta name="signature-permanent" content="AKMOGCJM1">
@@ -318,7 +453,56 @@ footer{background:#02080e}
     <div class="lang"><button id="enBtn" class="active" onclick="setLang('en')">EN</button><button id="arBtn" onclick="setLang('ar')">العربية</button></div>
   </div>
 </header>
+<!-- MLRI — Official International Legal Notice -->
+<section class="mlri-legal-banner" aria-label="MLRI International Legal Notice">
+  <a
+    href="https://doi.org/10.5281/zenodo.23217683"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="mlri-legal-banner__link"
+  >
 
+    <span class="mlri-legal-banner__icon" aria-hidden="true">⚖</span>
+
+    <span class="mlri-legal-banner__content">
+
+      <strong class="en-only">INTERNATIONAL LEGAL NOTICE</strong>
+      <strong class="ar-only">إشعار قانوني دولي</strong>
+
+      <span class="mlri-legal-banner__subtitle en-only">
+        Protection of MLRI Intellectual Property, Knowledge Assets,
+        Research &amp; Creative Works
+      </span>
+
+      <span class="mlri-legal-banner__subtitle ar-only">
+        حماية الملكية الفكرية والأصول المعرفية والبحثية والإبداعية
+        لمعهد نور الماورائيات للبحوث (MLRI)
+      </span>
+
+      <span class="mlri-legal-banner__meta en-only">
+        Officially Issued by MLRI
+        &nbsp;•&nbsp;
+        DOI: 10.5281/zenodo.23217683
+      </span>
+
+      <span class="mlri-legal-banner__meta ar-only">
+        صادر رسميًا عن معهد نور الماورائيات للبحوث (MLRI)
+        &nbsp;•&nbsp;
+        DOI: 10.5281/zenodo.23217683
+      </span>
+
+    </span>
+
+    <span class="mlri-legal-banner__button en-only">
+      VIEW OFFICIAL LEGAL NOTICE ↗
+    </span>
+
+    <span class="mlri-legal-banner__button ar-only">
+      عرض الإشعار القانوني الرسمي ↗
+    </span>
+
+  </a>
+</section>
 <main id="top">
 <section class="hero">
 <div class="container hero-inner">
